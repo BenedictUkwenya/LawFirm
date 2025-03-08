@@ -36,7 +36,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/contact", formData);
+      const res = await axios.post("/contact", formData);
       toast({
         title: res.data.message,
         status: "success",
